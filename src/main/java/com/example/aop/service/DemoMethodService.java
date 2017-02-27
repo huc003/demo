@@ -11,4 +11,8 @@ public class DemoMethodService {
     public void add(){
         System.out.println("方法规则式拦截hello");
     }
+
+    public void test(){
+        System.out.println("test方法测试是否被拦截");
+    }
 }

@@ -18,6 +18,7 @@ public class Main {
         DemoMethodService demoMethodService = context.getBean(DemoMethodService.class);
         demoAnnotationService.add();
         demoMethodService.add();
+        demoMethodService.test();
         context.close();
     }
 }
