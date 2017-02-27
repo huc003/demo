@@ -5,7 +5,14 @@ package com.example2.service;
  */
 public class UseFunctionService {
 
+    public FunctionService functionService;
+
+    public void setFunctionService(FunctionService functionService){
+        this.functionService = functionService;
+    }
+
     public String sayHello(String world){
-        return "Hello "+ world;
+        return functionService.sayHello(world);
+//        return "Hello "+ world;
     }
 }

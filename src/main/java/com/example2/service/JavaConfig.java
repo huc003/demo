@@ -1,6 +1,7 @@
 package com.example2.service;
 
 import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Bean;
 
 /**
@@ -16,7 +17,9 @@ public class JavaConfig {
 
     @Bean
     public UseFunctionService useFunctionService(){
-        return new UseFunctionService();
+        UseFunctionService useFunctionService = new UseFunctionService();
+        useFunctionService.setFunctionService(functionService());
+        return useFunctionService;
     }
 
 }

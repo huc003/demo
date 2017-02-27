@@ -19,5 +19,6 @@ public class DemoApplication {
 		//声明bean
 		UseFunctionService useFunctionService = (UseFunctionService)context.getBean("useFunctionService");
 		System.out.println(useFunctionService.sayHello("hucheng"));
+		context.close();
 	}
 }
