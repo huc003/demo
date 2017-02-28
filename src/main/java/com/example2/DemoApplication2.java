@@ -11,12 +11,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 @SpringBootApplication
 public class DemoApplication2 {
-    public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
-        FunctionService functionService = (FunctionService)context.getBean("functionService");
-        UseFunctionService useFunctionService = (UseFunctionService)context.getBean("useFunctionService");
-        System.out.println(functionService.sayHello("hucehng"));
-        System.out.println(useFunctionService.sayHello("zhangsan"));
-        context.close();
-    }
+//    public static void main(String[] args) {
+//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
+//        FunctionService functionService = (FunctionService)context.getBean("functionService");
+//        UseFunctionService useFunctionService = (UseFunctionService)context.getBean("useFunctionService");
+//        System.out.println(functionService.sayHello("hucehng"));
+//        System.out.println(useFunctionService.sayHello("zhangsan"));
+//        context.close();
+//    }
 }

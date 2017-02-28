@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @Configurable
 @ComponentScan("com.example.bean")
 public class PrePostConfig {
-    @Bean(initMethod = "test",destroyMethod = "destroy")//初始化bean
+    @Bean(initMethod = "init",destroyMethod = "destroy")//初始化bean
     public BeanWayService beanWayService(){
         return new BeanWayService();
     }
